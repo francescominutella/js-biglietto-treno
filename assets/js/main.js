@@ -35,7 +35,8 @@ const age = prompt("How old are you?");
 console.log(age)
 
 // 3. declaretion price per km
-
+const priceKm = 0.21;
+console.log(priceKm)
 
 // 4. declaretion total price travel
 
