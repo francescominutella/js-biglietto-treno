@@ -55,8 +55,8 @@ if (age < 18) {
 } else if (age > 65) {
     totalPrice = ((totalPrice * 40) / 100);
     document.getElementById("result").innerHTML = `Price with descount 40%: ${totalPrice.toFixed(2)}€ `;
-}else{
-    document.getElementById("result").innerHTML = `Whole price: ${totalPrice.toFixed(2)}€ `
+}else if (age >= 18 && age <= 65){
+    document.getElementById("result").innerHTML = `Whole price: ${totalPrice.toFixed(2)}€ `;
 }
 
 
