@@ -47,27 +47,31 @@ console.log(totalPrice);
 
 
 
-if (age < 18) {
-    totalPrice = ((totalPrice * 20) / 100);
-    document.getElementById("result").innerHTML = `Price with descount 20%: ${totalPrice.toFixed(2)}€ `; /* "Total price: " + totalPrice.toFixed(2) + "€" */;
 
-} else if (age > 65) {
-    totalPrice = ((totalPrice * 40) / 100);
-    document.getElementById("result").innerHTML = `Price with descount 40%: ${totalPrice.toFixed(2)}€ `;
-
-}else if (age >= 18 && age <= 65){
-    document.getElementById("result").innerHTML = `Whole price: ${totalPrice.toFixed(2)}€ `;
-
-}else if (isNaN(age)){
-    document.getElementById("enterValue").innerHTML = "Enter data";
-}
-else if (isNaN(kilometers)){
-    document.getElementById("enterValue").innerHTML = "Enter data";
-}
 /* sssssssssssssssssssssssssssssssssssss */
 
+if (isNaN(kilometers)) {
+    document.write("Enter a valid distance value");
+}
+else
+    if (isNaN(age)) {
+        document.write("Enter a valid age value");
+    }
+    else {
 
+        if (age < 18) {
+            totalPrice = ((totalPrice * 20) / 100);
+            document.getElementById("result").innerHTML = `Price with descount 20%: ${totalPrice.toFixed(2)}€ `;
+        }
 
+        else if (age > 65) {
+            totalPrice = ((totalPrice * 40) / 100);
+            document.getElementById("result").innerHTML = `Price with descount 40%: ${totalPrice.toFixed(2)}€ `;
+        }
 
+        else if (age >= 18 && age <= 65) {
+            document.getElementById("result").innerHTML = `Whole price: ${totalPrice.toFixed(2)}€ `;
+        }
+    }
 /* alert("The total price of the ticket is " + totalPrice.toFixed(2) + "€"); */
 // 7. print in page HTML result with human confortable numericlal figures
