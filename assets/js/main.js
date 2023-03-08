@@ -27,8 +27,8 @@ strumenti:
 
 
 // 1. declaretion "How many kilometers do you want to travel?"
-let km = prompt("How many kilometers do you want to travel? ");
-console.log(km)
+let travelKm = prompt("How many kilometers do you want to travel? ");
+console.log(travelKm)
 
 // 2. declaretion "How old are you?"
 const age = prompt("How old are you?");
@@ -39,18 +39,20 @@ const priceKm = 0.21;
 console.log(priceKm)
 
 // 4. declaretion total price travel
-let totalPrice = (km * priceKm)
+let totalPrice = (travelKm * priceKm)
 console.log(totalPrice)
 
 // 5. IF age is lower than 18 years THEN active discount 20%
 // 6. ELSE IF age is higher than 18 years THEN active discount 40%
 
-if (age < 18) {
-    discount20 = ((totalPrice * 20) / 100 ); // 20% discount for minors
+/* if (age < 18) {
+    price20 = totalPrice * ; // 20% discount for minors
 } else if (age > 65) {
-    discount40 = ((totalPrice * 40) / 100 ); // 40% discount for senio5rs
+    price40 = totalPrice * ; // 40% discount for senio5rs
+}else{
+    (totalPrice)
 }
-
-
+ */
 // 7. print in page HTML result with human confortable numericlal figures
 
+document.getElementById("result").innerHTML = "Total price: " + totalPrice.toFixed(2) + "€";
