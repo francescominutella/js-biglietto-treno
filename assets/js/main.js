@@ -39,11 +39,18 @@ const priceKm = 0.21;
 console.log(priceKm)
 
 // 4. declaretion total price travel
-
+let totalPrice = (km * priceKm)
+console.log(totalPrice)
 
 // 5. IF age is lower than 18 years THEN active discount 20%
-
 // 6. ELSE IF age is higher than 18 years THEN active discount 40%
+
+if (age < 18) {
+    discount20 = ((totalPrice * 20) / 100 ); // 20% discount for minors
+} else if (age > 65) {
+    discount40 = ((totalPrice * 40) / 100 ); // 40% discount for senio5rs
+}
+
 
 // 7. print in page HTML result with human confortable numericlal figures
 
