@@ -25,12 +25,18 @@ strumenti:
 - toFixed (https://www.w3schools.com/jsref/jsref_tofixed.asp)
 */
 
-/* 
-1. declaretion "How many kilometers do you want to travel?"
-2. declaretion "How old are you?"
-3. declaretion total price travel
-4. IF age is lower than 18 years THEN active discount 20%
-5. ELSE IF age is higher than 18 years THEN active discount 40%  
-6. print in page HTML result with human confortable numericlal figures
-*/
+
+// 1. declaretion "How many kilometers do you want to travel?"
+let km = prompt("How many kilometers do you want to travel? ");
+console.log(km)
+
+// 2. declaretion "How old are you?"
+
+// 3. declaretion total price travel
+
+// 4. IF age is lower than 18 years THEN active discount 20%
+
+// 5. ELSE IF age is higher than 18 years THEN active discount 40%
+
+// 6. print in page HTML result with human confortable numericlal figures
 
