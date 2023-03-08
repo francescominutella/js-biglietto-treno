@@ -34,12 +34,15 @@ console.log(km)
 const age = prompt("How old are you?");
 console.log(age)
 
-// 3. declaretion total price travel
+// 3. declaretion price per km
 
 
-// 4. IF age is lower than 18 years THEN active discount 20%
+// 4. declaretion total price travel
 
-// 5. ELSE IF age is higher than 18 years THEN active discount 40%
 
-// 6. print in page HTML result with human confortable numericlal figures
+// 5. IF age is lower than 18 years THEN active discount 20%
+
+// 6. ELSE IF age is higher than 18 years THEN active discount 40%
+
+// 7. print in page HTML result with human confortable numericlal figures
 
