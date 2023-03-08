@@ -48,8 +48,8 @@ const errorNoBorn = ("error")
 // 5. IF age is lower than 18 years THEN active discount 20%
 // 6. ELSE IF age is higher than 18 years THEN active discount 40%
 
-if (age <= 0) {
-    alert("you were not born yet");
+if (age <= 0 && age >= 121) {
+    alert("Are you sure?");
 } else {
     document.getElementById("errorNoBorn").innerHTML
 
