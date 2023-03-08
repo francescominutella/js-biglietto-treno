@@ -42,25 +42,24 @@ console.log(priceKm)
 let totalPrice = kilometers * priceKm;
 console.log(totalPrice);
 
-const errorNoBorn = ("error")
+
 
 
 // 5. IF age is lower than 18 years THEN active discount 20%
 // 6. ELSE IF age is higher than 18 years THEN active discount 40%
 
-if (age <= 0 && age >= 121) {
-    alert("Are you sure?");
-} else {
-    document.getElementById("errorNoBorn").innerHTML
 
-    if (age < 18) {
-        totalPrice = ((totalPrice * 20) / 100);
-        document.getElementById("result").innerHTML = "Total price: " + totalPrice.toFixed(2) + "€";
-    } else if (age > 65) {
-        totalPrice = ((totalPrice * 40) / 100);
-        document.getElementById("result").innerHTML = "Total price: " + totalPrice.toFixed(2) + "€";
-    }
+if (age < 18) {
+    totalPrice = ((totalPrice * 20) / 100);
+    document.getElementById("result").innerHTML = "Total price: " + totalPrice.toFixed(2) + "€";
+} else if (age > 65) {
+    totalPrice = ((totalPrice * 40) / 100);
+    document.getElementById("result").innerHTML = "Total price: " + totalPrice.toFixed(2) + "€";
+}else{
+    document.getElementById("result").innerHTML = "Total price: " + totalPrice.toFixed(2) + "€";
 }
+
+
 
 
 /* alert("The total price of the ticket is " + totalPrice.toFixed(2) + "€"); */
