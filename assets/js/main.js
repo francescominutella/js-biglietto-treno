@@ -31,8 +31,11 @@ let km = prompt("How many kilometers do you want to travel? ");
 console.log(km)
 
 // 2. declaretion "How old are you?"
+const age = prompt("How old are you?");
+console.log(age)
 
 // 3. declaretion total price travel
+
 
 // 4. IF age is lower than 18 years THEN active discount 20%
 
