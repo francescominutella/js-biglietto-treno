@@ -42,22 +42,29 @@ console.log(priceKm)
 let totalPrice = kilometers * priceKm;
 console.log(totalPrice);
 
-
-
-
 // 5. IF age is lower than 18 years THEN active discount 20%
 // 6. ELSE IF age is higher than 18 years THEN active discount 40%
+
 
 
 if (age < 18) {
     totalPrice = ((totalPrice * 20) / 100);
     document.getElementById("result").innerHTML = `Price with descount 20%: ${totalPrice.toFixed(2)}€ `; /* "Total price: " + totalPrice.toFixed(2) + "€" */;
+
 } else if (age > 65) {
     totalPrice = ((totalPrice * 40) / 100);
     document.getElementById("result").innerHTML = `Price with descount 40%: ${totalPrice.toFixed(2)}€ `;
+
 }else if (age >= 18 && age <= 65){
     document.getElementById("result").innerHTML = `Whole price: ${totalPrice.toFixed(2)}€ `;
+
+}else if (isNaN(age)){
+    document.getElementById("enterValue").innerHTML = "Enter data";
 }
+else if (isNaN(kilometers)){
+    document.getElementById("enterValue").innerHTML = "Enter data";
+}
+/* sssssssssssssssssssssssssssssssssssss */
 
 
 
